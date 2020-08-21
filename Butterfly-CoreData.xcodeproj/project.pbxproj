@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		830B5FC024EF50970063CC94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B5FBF24EF50970063CC94 /* AppDelegate.swift */; };
-		830B5FC424EF50970063CC94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B5FC324EF50970063CC94 /* ViewController.swift */; };
 		830B5FC724EF50970063CC94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830B5FC524EF50970063CC94 /* Main.storyboard */; };
 		830B5FCA24EF50970063CC94 /* Butterfly_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 830B5FC824EF50970063CC94 /* Butterfly_CoreData.xcdatamodeld */; };
 		830B5FCC24EF50980063CC94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830B5FCB24EF50980063CC94 /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		830B5FDA24EF50990063CC94 /* Butterfly_CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B5FD924EF50990063CC94 /* Butterfly_CoreDataTests.swift */; };
 		835069A724EF59EC006C8F06 /* BFItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835069A524EF59EC006C8F06 /* BFItemViewController.swift */; };
 		835069A824EF59EC006C8F06 /* BFItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835069A624EF59EC006C8F06 /* BFItemViewController.xib */; };
+		835069AA24EF5B21006C8F06 /* BFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835069A924EF5B21006C8F06 /* BFTableViewController.swift */; };
 		BD89A334BC5DF55FC6020524 /* Pods_Butterfly_CoreDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25642BCCA51EEF0DE3D9D9AF /* Pods_Butterfly_CoreDataTests.framework */; };
 		CC944BC3D482D9EA803226B1 /* Pods_Butterfly_CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A9BBA6DA67DAC52A6B391D /* Pods_Butterfly_CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,6 @@
 		61706C9C5DA2E16F525D5ECE /* Pods-Butterfly-CoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butterfly-CoreData.debug.xcconfig"; path = "Target Support Files/Pods-Butterfly-CoreData/Pods-Butterfly-CoreData.debug.xcconfig"; sourceTree = "<group>"; };
 		830B5FBC24EF50970063CC94 /* Butterfly-CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Butterfly-CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		830B5FBF24EF50970063CC94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		830B5FC324EF50970063CC94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		830B5FC624EF50970063CC94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		830B5FC924EF50970063CC94 /* Butterfly_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Butterfly_CoreData.xcdatamodel; sourceTree = "<group>"; };
 		830B5FCB24EF50980063CC94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		830B5FDB24EF50990063CC94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		835069A524EF59EC006C8F06 /* BFItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFItemViewController.swift; sourceTree = "<group>"; };
 		835069A624EF59EC006C8F06 /* BFItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BFItemViewController.xib; sourceTree = "<group>"; };
+		835069A924EF5B21006C8F06 /* BFTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFTableViewController.swift; sourceTree = "<group>"; };
 		91AEF444543B81FCF4EC25C2 /* Pods-Butterfly-CoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butterfly-CoreData.release.xcconfig"; path = "Target Support Files/Pods-Butterfly-CoreData/Pods-Butterfly-CoreData.release.xcconfig"; sourceTree = "<group>"; };
 		C2B27EDD2E146303F60C794C /* Pods-Butterfly-CoreDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butterfly-CoreDataTests.debug.xcconfig"; path = "Target Support Files/Pods-Butterfly-CoreDataTests/Pods-Butterfly-CoreDataTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,15 +106,14 @@
 		830B5FBE24EF50970063CC94 /* Butterfly-CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				835069AC24EF5C2E006C8F06 /* model */,
+				835069AB24EF5B69006C8F06 /* controllers */,
 				830B5FBF24EF50970063CC94 /* AppDelegate.swift */,
-				830B5FC324EF50970063CC94 /* ViewController.swift */,
 				830B5FC524EF50970063CC94 /* Main.storyboard */,
 				830B5FCB24EF50980063CC94 /* Assets.xcassets */,
 				830B5FCD24EF50980063CC94 /* LaunchScreen.storyboard */,
 				830B5FD024EF50980063CC94 /* Info.plist */,
 				830B5FC824EF50970063CC94 /* Butterfly_CoreData.xcdatamodeld */,
-				835069A524EF59EC006C8F06 /* BFItemViewController.swift */,
-				835069A624EF59EC006C8F06 /* BFItemViewController.xib */,
 			);
 			path = "Butterfly-CoreData";
 			sourceTree = "<group>";
@@ -126,6 +125,23 @@
 				830B5FDB24EF50990063CC94 /* Info.plist */,
 			);
 			path = "Butterfly-CoreDataTests";
+			sourceTree = "<group>";
+		};
+		835069AB24EF5B69006C8F06 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				835069A924EF5B21006C8F06 /* BFTableViewController.swift */,
+				835069A524EF59EC006C8F06 /* BFItemViewController.swift */,
+				835069A624EF59EC006C8F06 /* BFItemViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		835069AC24EF5C2E006C8F06 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		FCF405663007A0AB6371D180 /* Frameworks */ = {
@@ -306,10 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830B5FC424EF50970063CC94 /* ViewController.swift in Sources */,
 				830B5FC024EF50970063CC94 /* AppDelegate.swift in Sources */,
 				830B5FCA24EF50970063CC94 /* Butterfly_CoreData.xcdatamodeld in Sources */,
 				835069A724EF59EC006C8F06 /* BFItemViewController.swift in Sources */,
+				835069AA24EF5B21006C8F06 /* BFTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
