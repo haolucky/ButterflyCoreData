@@ -16,6 +16,8 @@
 		835069A724EF59EC006C8F06 /* BFItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835069A524EF59EC006C8F06 /* BFItemViewController.swift */; };
 		835069A824EF59EC006C8F06 /* BFItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835069A624EF59EC006C8F06 /* BFItemViewController.xib */; };
 		835069AA24EF5B21006C8F06 /* BFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835069A924EF5B21006C8F06 /* BFTableViewController.swift */; };
+		8352260424EFA90E00B6D0AE /* BFApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352260324EFA90E00B6D0AE /* BFApiManager.swift */; };
+		8352260624EFDAB700B6D0AE /* BFPurchaseOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352260524EFDAB700B6D0AE /* BFPurchaseOrder.swift */; };
 		BD89A334BC5DF55FC6020524 /* Pods_Butterfly_CoreDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25642BCCA51EEF0DE3D9D9AF /* Pods_Butterfly_CoreDataTests.framework */; };
 		CC944BC3D482D9EA803226B1 /* Pods_Butterfly_CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A9BBA6DA67DAC52A6B391D /* Pods_Butterfly_CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		835069A524EF59EC006C8F06 /* BFItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFItemViewController.swift; sourceTree = "<group>"; };
 		835069A624EF59EC006C8F06 /* BFItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BFItemViewController.xib; sourceTree = "<group>"; };
 		835069A924EF5B21006C8F06 /* BFTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFTableViewController.swift; sourceTree = "<group>"; };
+		8352260324EFA90E00B6D0AE /* BFApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFApiManager.swift; sourceTree = "<group>"; };
+		8352260524EFDAB700B6D0AE /* BFPurchaseOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFPurchaseOrder.swift; sourceTree = "<group>"; };
 		91AEF444543B81FCF4EC25C2 /* Pods-Butterfly-CoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butterfly-CoreData.release.xcconfig"; path = "Target Support Files/Pods-Butterfly-CoreData/Pods-Butterfly-CoreData.release.xcconfig"; sourceTree = "<group>"; };
 		C2B27EDD2E146303F60C794C /* Pods-Butterfly-CoreDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Butterfly-CoreDataTests.debug.xcconfig"; path = "Target Support Files/Pods-Butterfly-CoreDataTests/Pods-Butterfly-CoreDataTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +110,7 @@
 		830B5FBE24EF50970063CC94 /* Butterfly-CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				835069AC24EF5C2E006C8F06 /* model */,
+				8352260224EFA8F400B6D0AE /* model */,
 				835069AB24EF5B69006C8F06 /* controllers */,
 				830B5FBF24EF50970063CC94 /* AppDelegate.swift */,
 				830B5FC524EF50970063CC94 /* Main.storyboard */,
@@ -137,9 +141,11 @@
 			path = controllers;
 			sourceTree = "<group>";
 		};
-		835069AC24EF5C2E006C8F06 /* model */ = {
+		8352260224EFA8F400B6D0AE /* model */ = {
 			isa = PBXGroup;
 			children = (
+				8352260324EFA90E00B6D0AE /* BFApiManager.swift */,
+				8352260524EFDAB700B6D0AE /* BFPurchaseOrder.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -322,8 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8352260624EFDAB700B6D0AE /* BFPurchaseOrder.swift in Sources */,
 				830B5FC024EF50970063CC94 /* AppDelegate.swift in Sources */,
 				830B5FCA24EF50970063CC94 /* Butterfly_CoreData.xcdatamodeld in Sources */,
+				8352260424EFA90E00B6D0AE /* BFApiManager.swift in Sources */,
 				835069A724EF59EC006C8F06 /* BFItemViewController.swift in Sources */,
 				835069AA24EF5B21006C8F06 /* BFTableViewController.swift in Sources */,
 			);

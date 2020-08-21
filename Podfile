@@ -7,6 +7,7 @@ target 'Butterfly-CoreData' do
 
   # Pods for Butterfly-CoreData
   pod 'Toast-Swift', '~> 5.0.1'
+  pod 'Alamofire', '~> 5.2'
 
   target 'Butterfly-CoreDataTests' do
     inherit! :search_paths

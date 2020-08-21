@@ -35,11 +35,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="POCell" id="B1e-EW-d6r">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="POCell" rowHeight="150" id="B1e-EW-d6r">
+                                <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B1e-EW-d6r" id="tf2-r6-2Nn">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -53,12 +53,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Production Order" id="7c3-2P-G06">
-                        <barButtonItem key="rightBarButtonItem" title="New PO" id="dwi-eW-fkX"/>
+                        <barButtonItem key="rightBarButtonItem" title="New PO" id="dwi-eW-fkX">
+                            <connections>
+                                <action selector="addNewPO:" destination="Bda-g9-oro" id="40l-jo-VHo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73K-xi-NEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="936" y="113"/>
+            <point key="canvasLocation" x="934.78260869565224" y="112.5"/>
         </scene>
         <!--Item detail-->
         <scene sceneID="guJ-9l-Lgd">
@@ -70,7 +74,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qTm-e3-0a4"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Item detail" id="izb-Z8-cUE"/>
+                    <navigationItem key="navigationItem" title="Item detail" id="izb-Z8-cUE">
+                        <barButtonItem key="rightBarButtonItem" title="New Item" id="SA6-nX-QNL"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ByL-Y6-JsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
